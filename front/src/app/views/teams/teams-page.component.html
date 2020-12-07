@@ -1,0 +1,5 @@
+<div class="searchbar">
+  <app-searchbar (dataEmitter)="leagueSelected($event._id)" [dataList]="leagues$ | async"></app-searchbar>
+</div>
+<app-teams-list (teamDetailsEmitter)="teamSelected($event)" [teamsList]="teams$ | async"></app-teams-list>
+

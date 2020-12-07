@@ -1,0 +1,16 @@
+.player-card {
+  margin-bottom: 20px;
+  display: flex;
+  background-color: #f5f6fa;
+
+  img {
+    width: 100px;
+  }
+
+  ul {
+    list-style-type: none;
+    li {
+      color: grey;
+    }
+  }
+}

@@ -1,0 +1,5 @@
+<div class="container">
+  <div (click)="teamDetailsEmitter.emit(team)" *ngFor="let team of teamsList" class="team">
+    <img [src]="team.thumbnail" [alt]="team.name">
+  </div>
+</div>

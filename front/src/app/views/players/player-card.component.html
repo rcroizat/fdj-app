@@ -1,0 +1,17 @@
+<div *ngIf="player" class="player-card">
+  <img [src]="player.thumbnail">
+  <ul>
+    <li>
+      <b>{{ player.name }}</b>
+    </li>
+    <li>
+      {{ player.position }}
+    </li>
+    <li>
+      {{ player.signin.amount |  number }} {{ player.signin.currency }}
+    </li>
+    <li>
+      {{ player.born | date: 'dd/MM/yyyy'}}
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,8 @@
+<div class="headbar">
+  <span class="go-back" (click)="goBack()">Go back</span>
+  <h1>{{teamName}}</h1>
+</div>
+<div class="container">
+  <app-player-card *ngFor="let player of players" [player]="player">
+  </app-player-card>
+</div>

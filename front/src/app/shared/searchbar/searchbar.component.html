@@ -1,0 +1,15 @@
+<mat-form-field >
+  <input [matAutocomplete]="auto"
+         aria-label="Number"
+         matInput
+         placeholder="Select by league"
+         type="text">
+  <mat-autocomplete
+    #auto="matAutocomplete"
+    [displayWith]="getOptionName"
+    (optionSelected)='dataEmitter.emit($event.option.value)'>
+    <mat-option *ngFor="let data of dataList" [value]="data">
+      {{ data.name }}
+    </mat-option>
+  </mat-autocomplete>
+</mat-form-field>
